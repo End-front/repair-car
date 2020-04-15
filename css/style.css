@@ -581,8 +581,12 @@ a {
   align-items: flex-start;
 }
 
+.section-6__item:nth-child(n + 3) {
+  margin-top: 50px;
+}
+
 @media (max-width: 992px) {
-  .section-6__item + .section-6__item {
+  .section-6__item:nth-child(n + 2) {
     margin-top: 50px;
   }
 }
@@ -711,12 +715,10 @@ a {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  position: relative;
+  background-position: 50% 30%;
 }
 
 .section-8__item {
-  position: relative;
-  z-index: 2;
   background: #d91233;
   font-size: 20px;
   padding: 60px 100px;
