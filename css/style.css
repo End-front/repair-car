@@ -434,9 +434,8 @@ a {
 }
 
 .section-3 .row {
-  padding: 0 10px;
   border: 5px solid #ffffff;
-  padding: 60px 0 40px;
+  padding: 60px 10px 40px;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -652,4 +651,155 @@ a {
 
 .youtube:hover .play {
   background-position: 0 0;
+}
+
+.section-7 {
+  background: #dbdbdb;
+}
+
+.section-7 .section__title {
+  margin-bottom: 21px;
+}
+
+.section-7 .section__text {
+  margin-bottom: 60px;
+}
+
+.section-7 .row {
+  border: 5px solid #ffffff;
+  padding: 60px 10px 40px;
+}
+
+.section-7__row {
+  text-align: left;
+  padding: 0 25px;
+}
+
+.section-7__row .input {
+  width: 100%;
+  margin-top: 8px;
+  border: 1px solid #fff;
+  padding: 0 17px;
+  height: 45px;
+}
+
+.section-7__row .input.not {
+  border-color: #ff0000;
+}
+
+.section-7__button {
+  margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+  .section-7__button {
+    min-width: auto;
+    width: 100%;
+  }
+}
+
+.section-8 {
+  padding: 50px 0 210px;
+  color: #fff;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.section-8__item {
+  position: relative;
+  z-index: 2;
+  background: #d91233;
+  font-size: 20px;
+  padding: 60px 100px;
+  width: 100%;
+  max-width: 490px;
+}
+
+@media (max-width: 576px) {
+  .section-8__item {
+    padding: 60px 50px;
+  }
+}
+
+.section-8__item div + div {
+  margin-bottom: 30px;
+}
+
+.section-8__item div:last-child {
+  margin-bottom: 0;
+}
+
+.section-8__item__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.section-8__item__num {
+  font-weight: bold;
+}
+
+.section-8__item__email a {
+  text-decoration: underline;
+}
+
+.section-8__item__email a:hover {
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.footer__img {
+  background-position: 0% 50%;
+  background-size: contain;
+  min-height: 30px;
+}
+
+@media (max-width: 576px) {
+  .footer__img {
+    background-position: 50% 50%;
+  }
+}
+
+.footer__right {
+  text-align: right;
+}
+
+@media (max-width: 576px) {
+  .footer__right {
+    margin-top: 15px;
+    text-align: center;
+  }
+}
+
+.footer__right__num {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer__right__link {
+  cursor: pointer;
+  color: #d91233;
+  text-decoration: underline;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.footer__right__link:hover {
+  text-decoration: none;
+  color: #ff162c;
 }

@@ -82,7 +82,7 @@ $(document).ready(function() {
 		autoHeightSection();
 	});
 
-	$('.header__right__link, a, button').click(function() {
+	$('.header__right__link, .footer__right__link, a, button').click(function() {
 		let attr = $(this).attr('data-window');
 		if (attr) {
 			$("#"+attr).addClass('active');
@@ -121,6 +121,16 @@ $(document).ready(function() {
 			let input = $('.section-3__row .input').eq(i).val();
 			if (!input) {
 				$('.section-3__row .input').eq(i).addClass('not');
+			};
+		};
+	});
+	$('.section-7__button').click(function() {
+		$('.section-7__row .input').removeClass('not');
+		let j = $('.section-7__form').children('.section-7__row').length;
+		for (i = 0; i <= j; i++) {
+			let input = $('.section-7__row .input').eq(i).val();
+			if (!input) {
+				$('.section-7__row .input').eq(i).addClass('not');
 			};
 		};
 	});
